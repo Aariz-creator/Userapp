@@ -7,6 +7,7 @@ import {
   Paper,
   TextField,
   Typography,
+  Stack
 } from '@mui/material';
 import { signIn } from 'next-auth/react';
 import { useRouter } from 'next/navigation';
@@ -64,8 +65,25 @@ export default function AdminLoginPage() {
           >
             Login
           </Button>
+
+
+
+
+          <Stack spacing={4}>
+      {/* your existing login form here */}
+                <Button
+        variant="outlined"
+        onClick={() => router.push('/admin/users')}
+      >
+        Go to Users
+      </Button>
+    
+    </Stack>
         </Box>
+       
       </Paper>
     </Container>
+
+    
   );
 }
