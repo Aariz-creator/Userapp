@@ -1,36 +1,128 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Admin Dashboard – Next.js + NextAuth + MUI
+A modern Admin Dashboard built using Next.js App Router, NextAuth (Credentials Provider), Material UI (MUI), and DummyJSON API.
+It includes authentication, users listing with pagination & search, and detailed user views.
 
-## Getting Started
+## 🚀 Features
+🔐 Authentication
 
-First, run the development server:
+Admin login using NextAuth Credentials Provider
 
-```bash
+Authenticated sessions with JWT
+
+Custom login page (/admin/login)
+
+Redirect authenticated users to dashboard
+
+## 👥 Users Management
+
+Users List Page
+
+Fetch users from DummyJSON API
+
+Pagination (limit & skip)
+
+Search users
+
+Responsive MUI Table UI
+
+View user details
+
+Single User Details Page
+
+Full user profile
+
+Company & address info
+
+Clean MUI card layout
+
+Back to users navigation
+
+## 🧰 Tech Stack
+
+Next.js 16 (App Router)
+
+NextAuth.js
+
+Material UI (MUI)
+
+DummyJSON API
+
+TypeScript
+
+Turbopack
+
+## 📂 Project Structure
+src/
+ ├── app/
+ │   ├── admin/
+ │   │   ├── login/
+ │   │   │   └── page.tsx
+ │   │   ├── users/
+ │   │   │   ├── page.tsx
+ │   │   │   └── [id]/
+ │   │   │       └── page.tsx
+ │   └── api/
+ │       └── auth/
+ │           └── [...nextauth]/route.ts
+ ├── components/
+ └── styles/
+
+🔑 Demo Credentials (DummyJSON)
+
+Use these credentials on the login page:
+
+Username: kminchelle
+Password: 0lelplR
+
+
+These credentials are provided by DummyJSON API
+
+## 🌐 APIs Used
+Authentication
+POST https://dummyjson.com/auth/login
+
+Users
+GET https://dummyjson.com/users?limit=10&skip=0
+GET https://dummyjson.com/users/search?q=...
+GET https://dummyjson.com/users/{id}
+
+🛠️ Installation & Setup
+## 1️⃣ Clone the repo
+git clone https://github.com/your-username/admin-dashboard-nextjs.git
+cd admin-dashboard-nextjs
+
+## 2️⃣ Install dependencies
+npm install
+
+3️⃣ Environment Variables
+
+Create a .env.local file:
+
+NEXTAUTH_SECRET=your-secret-key
+NEXTAUTH_URL=http://localhost:3000
+
+4️⃣ Run the project
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+App runs at 👉 http://localhost:3000
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+🔒 Protected Routes
 
-## Learn More
+/admin/users
 
-To learn more about Next.js, take a look at the following resources:
+/admin/users/[id]
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Only authenticated users can access these pages.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🎯 Future Improvements working on
 
-## Deploy on Vercel
+Role-based access (Admin / User)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Server-side pagination
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+User edit & delete
+
+Dark mode support
+
+API error handling & skeleton loaders
