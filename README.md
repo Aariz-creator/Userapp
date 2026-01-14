@@ -126,3 +126,17 @@ User edit & delete
 Dark mode support
 
 API error handling & skeleton loaders
+
+## the login page
+<img width="1919" height="1079" alt="Screenshot 2026-01-14 171651" src="https://github.com/user-attachments/assets/473daf58-cc65-47a2-98b3-30097e078482" />
+## the dashboard after logging in
+<img width="1726" height="917" alt="Screenshot 2026-01-14 171637" src="https://github.com/user-attachments/assets/3708f6d4-f414-4828-b5b0-4df08a095801" />
+## the users page
+<img width="1919" height="1079" alt="Screenshot 2026-01-14 171702" src="https://github.com/user-attachments/assets/00a929bf-4f5c-4ce0-99b1-bff26b084e13" />
+## searching the users
+<img width="1919" height="1071" alt="Screenshot 2026-01-14 171722" src="https://github.com/user-attachments/assets/ef486b8c-234b-4fd7-b1bf-8ced5e234a2a" />
+## viewing the user
+<img width="1919" height="1079" alt="Screenshot 2026-01-14 171731" src="https://github.com/user-attachments/assets/f05be473-f29e-4184-be36-1c03ddc194d2" />
+
+
+
